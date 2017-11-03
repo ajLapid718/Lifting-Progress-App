@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Lift.create(date: Date.now, liftname: "Bench Press", ismetric: false, weightlifted: "225", repsperformed: "1", onerm: "1")
