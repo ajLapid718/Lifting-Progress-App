@@ -8,7 +8,7 @@ end
 # Gem Additions Below
 gem 'bootstrap'
 gem 'react-rails'
-gem 'coffee-script-source'
+gem 'coffee-script-source', '1.8.0'
 # Gem Additions Above
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
