@@ -8,6 +8,7 @@ end
 # Gem Additions Below
 gem 'bootstrap'
 gem 'react-rails'
+gem 'jquery-rails'
 # Gem Additions Above
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
