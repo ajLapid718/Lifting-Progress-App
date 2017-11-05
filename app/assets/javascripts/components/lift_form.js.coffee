@@ -13,9 +13,9 @@
     @state.date && @state.liftname && @state.ismetric && @state.weightlifted && @state.repsperformed && @state.onerm
   handleSubmit: (e) ->
     e.preventDefault()
-    S.post '', { lift: @state }, (data) =>
+    $.post '', { lift: @state }, (data) =>
       @props.handleNewLift(data)
-      @setState @getInitialState()
+      @setState @getInitialState(),
         'JSON'
   render: ->
     React.DOM.form

@@ -13,7 +13,7 @@
       React.DOM.h1
         className: 'title'
         'Lifts'
-      React.createElement.LiftForm, handleNewLift: @addLift
+      React.createElement LiftForm, handleNewLift: @addLift
       React.DOM.table
         className: 'table table-bordered'
         React.DOM.thead null,
