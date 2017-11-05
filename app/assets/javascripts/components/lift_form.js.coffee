@@ -6,6 +6,9 @@
     weightlifted: ''
     repsperformed: ''
     onerm: ''
+  handleValueChange: (e) ->
+    valueName = e.target.name
+    @setState "#{ valueName }": e.target.value
   render: ->
     React.DOM.form
       className: 'form-inline'
@@ -54,3 +57,8 @@
           name: 'onerm'
           value: @state.onerm
           onChange: @handleValueChange
+        React.DOM.button
+          type: 'submit'
+          className: 'btn btn-primary'
+          disabled: !@valid()
+          'Create Lift'
