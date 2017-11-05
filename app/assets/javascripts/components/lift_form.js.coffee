@@ -8,15 +8,15 @@
     onerm: ''
   handleValueChange: (e) ->
     valueName = e.target.name
-    @setState "#{ valueName }": e.target.value
+    @setState "#{ valueName }", e.target.value
   valid: ->
     @state.date && @state.liftname && @state.ismetric && @state.weightlifted && @state.repsperformed && @state.onerm
   handleSubmit: (e) ->
     e.preventDefault()
     $.post '', { lift: @state }, (data) =>
-      @props.handleNewLift(data)
-      @setState @getInitialState(),
-        'JSON'
+      @props.handleNewLift data
+      @setState @getInitialState()
+      ,  'JSON'
   render: ->
     React.DOM.form
       className: 'form-inline'
@@ -33,11 +33,11 @@
       React.DOM.div
         className: 'form-group'
         React.DOM.input
-          type: 'date'
+          type: 'text'
           className: 'form-control'
-          placeholder: 'date'
-          name: 'date'
-          value: @state.date
+          placeholder: 'liftname'
+          name: 'liftname'
+          value: @state.liftname
           onChange: @handleValueChange
       React.DOM.div
         className: 'form-group'
