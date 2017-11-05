@@ -6,6 +6,7 @@ class LiftsController < ApplicationController
       render json: @lift
     else
       render json: @lift.errors, status: :unprocessable_entity
+    end
   end
 
   def index
