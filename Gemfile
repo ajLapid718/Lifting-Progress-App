@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Gem Additions Below
-gem 'bootstrap', '~> 4.0.0alpha3.1'
+gem 'bootstrap'
 gem 'react-rails'
 gem 'jquery-rails'
 # Gem Additions Above
